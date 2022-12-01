@@ -5,8 +5,15 @@ const birds = [
     {"ID": "SP11", "Name": "Bell's Sparrow", "Type": "Sparrow" },
     {"ID": "DV2", "Name": "Mourning Dove", "Type": "Dove" }
 ];
-
+// cach 1 
 let Arrname=birds.map(function(bird){
     return bird.Name;
 })
+console.log(Arrname)
+
+// cach 2
+let Arrname1=new Map()
+for(i=0;i<birds.length;i++){
+    Arrname1.set(i,birds[i].Name)
+}
 console.log(Arrname)
